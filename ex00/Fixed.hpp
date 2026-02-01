@@ -6,7 +6,7 @@
 /*   By: jenne <jenne@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 16:22:14 by jenne             #+#    #+#             */
-/*   Updated: 2026/01/30 17:05:43 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/01 18:31:25 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ private:
     int _rawBits;
 public:
     Fixed();
-    Fixed(const Fixed &other);
-    Fixed &operator=(const Fixed &other);
+    Fixed(const Fixed &copy);
+    Fixed &operator=(const Fixed &copy);
     ~Fixed();
 
     int getRawBits(void) const;
