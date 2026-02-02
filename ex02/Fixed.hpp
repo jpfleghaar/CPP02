@@ -6,7 +6,7 @@
 /*   By: jenne <jenne@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 13:42:57 by jenne             #+#    #+#             */
-/*   Updated: 2026/02/02 13:43:10 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/02 19:26:06 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,33 @@ public:
     Fixed &operator=(const Fixed &other);
     ~Fixed();
 
+    //Compare operators
+    bool operator>(const Fixed &other) const;
+    bool operator<(const Fixed &other) const;
+    bool operator>=(const Fixed &other) const;
+    bool operator<=(const Fixed &other) const;
+    bool operator==(const Fixed &other) const;
+    bool operator!=(const Fixed &other) const;
+
+    //Arithmetic operators
+    Fixed operator+(const Fixed &other) const;
+    Fixed operator-(const Fixed &other) const;
+    Fixed operator/(const Fixed &other) const;
+    Fixed operator*(const Fixed &other) const;
+    Fixed operator--(int);
+    Fixed &operator--();
+    Fixed operator++(int);
+    Fixed &operator++();
+    
+    //compare functions
+    static Fixed &max(Fixed &a, Fixed &b);
+    static Fixed &min(Fixed &a, Fixed &b);
+    static const Fixed &max(const Fixed &a, const Fixed &b);
+    static const Fixed &min(const Fixed &a, const Fixed &b);
+    
+
     int getRawBits(void) const;
-    void    setRawBits(int const raw);
+    void    setRawBits(int const newBites);
     float   toFloat(void) const;
     int toInt(void) const;
 };
