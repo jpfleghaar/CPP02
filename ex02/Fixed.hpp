@@ -6,7 +6,7 @@
 /*   By: jenne <jenne@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 13:42:57 by jenne             #+#    #+#             */
-/*   Updated: 2026/02/02 19:26:06 by jenne            ###   ########.fr       */
+/*   Updated: 2026/02/02 19:34:34 by jenne            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ public:
     
 
     int getRawBits(void) const;
-    void    setRawBits(int const newBites);
+    void    setRawBits(int const newBits);
     float   toFloat(void) const;
     int toInt(void) const;
 };
