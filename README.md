@@ -1,6 +1,6 @@
 # C++ Module 02 — Ad-hoc polymorphism, operator overloading, Orthodox Canonical Form
 
-A fixed-point number class in C++98, built step by step: canonical form, conversions, and full operator overloading.
+A fixed-point number class in C++, built step by step: canonical form, conversions, and full operator overloading.
 
 *This project was created as part of the 42 curriculum by jpflegha.*
 
@@ -35,7 +35,7 @@ cd CPP02/ex02 && make && ./Fixed
 10.1016
 ```
 
-Each exercise has its own Makefile (`c++ -Wall -Wextra -Werror -std=c++98`); the program is called `Fixed` in every exercise.
+Each exercise has its own Makefile (`c++ -Wall -Wextra -Werror -std=c++17`); the program is called `Fixed` in every exercise.
 
 ## Project structure
 
