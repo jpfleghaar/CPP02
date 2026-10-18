@@ -1,0 +1,17 @@
+# Build artifacts
+*.o
+*.d
+ex00/Fixed
+ex01/Fixed
+ex02/Fixed
+
+# Files created by the exercises at runtime
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Secrets
+.env
+secrets/
